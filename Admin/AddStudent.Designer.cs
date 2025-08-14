@@ -52,6 +52,8 @@
             this.btnClear = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.txtPass = new System.Windows.Forms.TextBox();
+            this.btnUpdate = new System.Windows.Forms.Button();
+            this.lblId = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -262,6 +264,7 @@
             this.btnClear.TabIndex = 21;
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // label9
             // 
@@ -281,11 +284,33 @@
             this.txtPass.Size = new System.Drawing.Size(132, 22);
             this.txtPass.TabIndex = 23;
             // 
+            // btnUpdate
+            // 
+            this.btnUpdate.Location = new System.Drawing.Point(109, 566);
+            this.btnUpdate.Margin = new System.Windows.Forms.Padding(4);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(100, 28);
+            this.btnUpdate.TabIndex = 24;
+            this.btnUpdate.Text = "Update";
+            this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
+            // 
+            // lblId
+            // 
+            this.lblId.AutoSize = true;
+            this.lblId.Location = new System.Drawing.Point(506, 514);
+            this.lblId.Name = "lblId";
+            this.lblId.Size = new System.Drawing.Size(49, 16);
+            this.lblId.TabIndex = 25;
+            this.lblId.Text = "              ";
+            // 
             // AddStudent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(587, 607);
+            this.Controls.Add(this.lblId);
+            this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.txtPass);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.btnClear);
@@ -344,5 +369,7 @@
         public System.Windows.Forms.Button btnClear;
         public System.Windows.Forms.Label label9;
         public System.Windows.Forms.TextBox txtPass;
+        public System.Windows.Forms.Button btnUpdate;
+        public System.Windows.Forms.Label lblId;
     }
 }
